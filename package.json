@@ -1,0 +1,17 @@
+{
+  "name": "bcd-encoder",
+  "version": "0.1.0",
+  "description": "Convert between unsigned integers and packed and unpacked binary-coded-decimal byte representations.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}

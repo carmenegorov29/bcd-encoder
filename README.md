@@ -50,3 +50,10 @@ add the convention your device actually uses.
 | `decodePacked`   | `(bytes: Uint8Array \| number[]) => number`      |
 
 Run the tests with `node --test`.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
